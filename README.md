@@ -34,3 +34,7 @@ peer: /X3nyLMlOSmahCVNIsSqqT8vh9pkeEdOsoAwaoo9uUZ=
 ```
 
 This Python script scans the list of peers for those that have the latest handshake time greater than 180 seconds ago and deletes/reinstates their configuration.
+
+### @Community
+There is room for improvements - feel free to open a PR :-)
+Thanks!
