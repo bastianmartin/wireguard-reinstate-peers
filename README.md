@@ -2,7 +2,7 @@
 Python script for reinstating WireGuard® peers that have been "offline" for more than 180 seconds.
 
 ### Problem: The public IP address of a peer is stored in memory indefinitely
-If you run the WireGuard® command line tool wg(8) on your server, you can see a peer's endpoint. The outpur should be like:
+If you run the WireGuard® command line tool wg(8) on your server, you can see a peer's endpoint. The output should be like:
 
 ```
 peer: /X3nyLMlOSmahCVNIsSqqT8vh9pkeEdOsoAwaoo9uUZ=
@@ -14,7 +14,7 @@ peer: /X3nyLMlOSmahCVNIsSqqT8vh9pkeEdOsoAwaoo9uUZ=
 
 As you can see, WireGuard® is associating the peer's public key with it's endpoint ip.
 
-This cannout be remedied when a connection is active as WireGuard® of course needs to know, where to send the encrypted packets to. But when a connection becomes "inactive", this is a privacy issue.
+This cannot be remedied when a connection is active as WireGuard® of course needs to know, where to send the encrypted packets to. But when a connection becomes "inactive", this is a privacy issue.
 
 ### Solution
 WireGuard® uses sessions and this gives us a point of action!
